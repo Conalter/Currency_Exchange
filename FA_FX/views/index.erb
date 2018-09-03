@@ -1,0 +1,11 @@
+
+
+ <!-- <h1> Foreign<=>Exchange </h1> -->
+
+
+<% @exchange.each do |exchange| %>
+  <p> Name: <%= exchange.pretty_name() %></p>
+  <p> Exchange: <%= exchange.quantity %></p>
+  <p><a href="/foreign_exchange/<%= exchange.id%>">Exchange </a></p>
+  <hr />
+<% end %>
